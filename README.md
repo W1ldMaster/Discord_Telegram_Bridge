@@ -36,11 +36,9 @@ cd Discord_Telegram_Bridge
 - API_ID и API_HASH: [my.telegram.org](https://my.telegram.org) → API Development Tools
 - ID чата: добавьте бота [@getmyid_bot](https://t.me/getmyid_bot) в группу
 
-### 3. Создайте файл `.env`
+### 3. Измение файл `.envexample`
 
-Создайте `.env` и заполните своими данными:
-
-Откройте `.env` и укажите:
+Переименуйте `.envexample` в `.env` и заполните своими данными:
 
 ```env
 DISCORD_TOKEN=ваш_токен_дискорд_бота
