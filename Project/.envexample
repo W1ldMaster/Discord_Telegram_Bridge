@@ -1,0 +1,7 @@
+DISCORD_TOKEN=ваш_токен_дискорд_бота
+TELEGRAM_TOKEN=ваш_токен_телеграм_бота
+TELEGRAM_CHAT=ID_чата_телеграм
+DISCORD_CHANNEL=ID_канала_дискорд
+DISCORD_GUILD=ID_сервера_дискорд
+API_ID=ваш_api_id
+API_HASH=ваш_api_hash
