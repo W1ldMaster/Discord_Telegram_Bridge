@@ -1,13 +1,11 @@
 import asyncio
+import os
+from asyncio import create_task, gather, run
 
 from discord_bot import create_discord_bot
-from tg import create_telegram_bridge
-from qprocessor import MessageProcessor
-
-from asyncio import create_task, gather, run
-import os
 from dotenv import load_dotenv
-
+from qprocessor import MessageProcessor
+from tg import create_telegram_bridge
 
 load_dotenv()
 

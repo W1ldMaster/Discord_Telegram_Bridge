@@ -1,6 +1,6 @@
+from main_bridge import MediaFile, Message, message_queue
 from pyrogram import Client, filters
 from pyrogram.enums import ChatType
-from main_bridge import message_queue, Message, MediaFile
 
 
 def create_telegram_bridge(TELEGRAM_TOKEN, API_ID, API_HASH):

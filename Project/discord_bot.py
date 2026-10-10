@@ -2,7 +2,7 @@ import re
 
 import discord as ds
 from discord.ext import commands
-from main_bridge import Message, message_queue, MediaFile
+from main_bridge import MediaFile, Message, message_queue
 
 
 def create_discord_bot(DISCORD_CHANNEL):

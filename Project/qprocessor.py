@@ -1,11 +1,12 @@
 import asyncio
-from main_bridge import message_queue, Message, MediaFile
-from pyrogram.enums import ChatType
-import tempfile
-import os
-import aiohttp
 import io
+import os
+import tempfile
+
+import aiohttp
 import discord as ds
+from main_bridge import MediaFile, Message, message_queue
+from pyrogram.enums import ChatType
 
 
 class MessageProcessor:
