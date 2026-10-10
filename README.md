@@ -36,11 +36,9 @@ cd Discord_Telegram_Bridge
 - API_ID и API_HASH: [my.telegram.org](https://my.telegram.org) → API Development Tools
 - ID чата: добавьте бота [@getmyid_bot](https://t.me/getmyid_bot) в группу
 
-### 3. Создайте файл `.env`
+### 3. Измение файл `.envexample`
 
-Создайте `.env` и заполните своими данными:
-
-Откройте `.env` и укажите:
+Переименуйте `.envexample` в `.env` и заполните своими данными:
 
 ```env
 DISCORD_TOKEN=ваш_токен_дискорд_бота
@@ -74,19 +72,19 @@ docker run -v ${pwd}/.env:/Project/.env discord-telegram-bot
 
 ```bash
 # Посмотреть логи
-docker logs -f my-bot
+docker logs -f
 
 # Остановить бота
-docker stop my-bot
+docker stop
 
 # Запустить снова
-docker start my-bot
+docker start
 
 # Перезапустить
-docker restart my-bot
+docker restart
 
 # Удалить контейнер
-docker rm my-bot
+docker rm
 ```
 
 ## 🔄 Автозапуск при перезагрузке
@@ -102,7 +100,7 @@ docker run --restart unless-stopped -v ${PWD}/.env:/Project/.env discord-telegra
 | Проблема | Решение |
 |----------|---------|
 | `Cannot connect to Docker daemon` | Запустите Docker Desktop |
-| `Improper token has been passed` | Проверьте токены в `.env` (без кавычек!) |
+| `Improper token has been passed` | Проверьте токены в `.env` |
 | Бот не отвечает | Проверьте логи: `docker logs my-bot` |
 | Сообщения не пересылаются | Проверьте ID каналов и чатов |
 
